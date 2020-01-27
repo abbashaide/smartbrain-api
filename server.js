@@ -30,7 +30,7 @@ app.use(express.json());  //bodyParser within express
 
 //Requests to endpoints
 app.get('/', (req, res) => { 
-	res.send(database.users);
+	res.send('it is working!');
 })
 
 app.post('/signin', signin.handleSignin(dB, bcrypt))   //another way of doing it as it will automatcally passing (req, res) after passing
