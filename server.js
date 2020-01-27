@@ -16,10 +16,8 @@ const app = express();
 const dB = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1', // we weill modify this depending where we are hosting for now its localhost
-    user : 'postgres',
-    password : 'pgabbas',
-    database : 'smart-brain'
+    host : process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
