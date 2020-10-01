@@ -1,7 +1,7 @@
 const Clarifai = require('clarifai');       // importing clarifi after installing through npm read documentation
 
 const app = new Clarifai.App({              //most APIs you'll use are gonna be similar to this
- apiKey: 'b85dc6baa7b7494b88201a12115fd6f9'
+ apiKey: 'a6886c8d4f20495c93aeeae92e079825'
 });
 
 const handleApiCall = (req, res) => {
